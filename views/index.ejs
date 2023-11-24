@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <title>Question Generate</title>
+</head>
+<body>
+    <div class="Heading">
+        <h1><center>Question Paper Generator</center></h1>
+    </div>
+    <div class="page">
+    <!-- <div class="query-form">
+        <form method="post" action="/processForm">
+            <h3>Marks:- <input type="number" name="marks" min="5" max="100" required></h3>
+            <center>Difficulty</center>
+            <h3>Easy:- <input type="number" name="easy" min="0" max="100" required></h3>
+            <h3>Medium:- <input type="number" name="medium" min="0" max="100" required></h3>
+            <h3>Hard:- <input type="number" name="hard" min="0" max="100" required></h3>
+            <button type="submit">Generate</button>
+        </form>
+    </div> -->
+    <div class="form-container">
+        <h2>What type of paper you want to Generate?</h2>
+      
+        <form method="post" action="/processForm">
+          <label for="marks">Marks:</label>
+          <input type="number" id="marks" name="marks" min="5" max="100" required>
+      
+          <center><label for="difficulty" class="diff">Difficulty</label></center>
+          <br><br>
+      
+          <div class="difficulty-levels">
+            <label for="easy">Easy:</label>
+            <input type="number" id="easy" name="easy" min="0" max="100" required>
+      
+            <label for="medium">Medium:</label>
+            <input type="number" id="medium" name="medium" min="0" max="100" required>
+      
+            <label for="hard">Hard:</label>
+            <input type="number" id="hard" name="hard" min="0" max="100" required>
+          </div>
+      
+          <button type="submit">Generate</button>
+        </form>
+      </div>
+    <div class="space"></div>
+    <div class="topics">
+        <center><h3 class="header-topic">Topics</h3></center>
+        
+        <ul class="topic-list">
+            <% questionStore.forEach(q => { %>
+                <li><%= q.topic %></li>
+            <% }); %>
+        </ul>
+   
+    </div>
+</div>
+    
+</body>
+</html>

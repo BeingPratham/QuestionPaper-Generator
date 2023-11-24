@@ -1,0 +1,43 @@
+h1{
+    color:black;
+    width: 190%;
+    margin-left: 113%;
+}
+body{
+    background-color: rgba(127, 127, 134, 0.729);
+    color:black;
+    
+}
+.navbar{
+    display: flex;
+    
+}
+.navbar a{
+    margin-left: 50%;
+    margin-top: 2%;
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    border: 1px solid black;
+    height: 27px;
+    width: 76px;
+    padding-left: 16px;
+}
+.navbar a:hover{
+    border: 1px solid rgba(127, 127, 134, 0.729);
+    color: rgba(127, 127, 134, 0.729);
+    background-color: black;
+    transition: 0.3s ease-in;
+}
+td,th {
+    border:1px solid black;
+    padding-left: 2px;
+    
+}
+table{
+    font-size: 20px;
+    margin-left: 20%;
+    width: 60%;
+    border:2px solid black;
+}
